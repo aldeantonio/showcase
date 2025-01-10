@@ -108,6 +108,7 @@
 //How to
 .how-to {
     background-color: $color-black;
+    padding: 100px 0;
 }
 
 .h-header {
@@ -115,6 +116,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 50px 0;
+    color: $color-white;
     @include mobile {
         margin: 25px 0;
     }
@@ -125,7 +127,40 @@
 }
 
 .h-content {
-    color: $color-white;
     display: grid;
+    color: $color-white;
+    border-bottom: 1px solid white;
+    grid-template-columns: repeat(12, 1fr);
+
+    .item-content-1 {
+        border-left: solid 1px white;
+        padding: 0 0 20px 20px;
+        grid-column-start: 4;
+        grid-column-end: 7;
+    }
+    .item-content-2 {
+        grid-column-start: 8;
+        border-left: solid 1px white;
+        padding: 0 0 20px 20px;
+        grid-column-end: 11;
+    }
+}
+.h-content-1 {
+    display: grid;
+    color: $color-white;
+    grid-template-columns: repeat(12, 1fr);
+
+    .item-content-1 {
+        border-left: dashed 1px white;
+        padding: 20px;
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    .item-content-2 {
+        grid-column-start: 6;
+        border-left: dashed 1px white;
+        padding: 20px;
+        grid-column-end: 11;
+    }
 }
 
