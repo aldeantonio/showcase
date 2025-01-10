@@ -266,6 +266,9 @@
 
     h2 {
         margin-bottom: 50px;
+        @include mobile {
+            margin-bottom: 25px;
+        }
     }
     display: flex;
     flex-direction: column;
@@ -297,8 +300,17 @@
   .my-slider {
     width: 80%;
     margin: 0 auto;
+
   }
 
   .tns-outer {
     width: 100%;
+    button {
+     display: none;
+    }
+  }
+
+  .tns-controls {
+    display: none;
+
   }

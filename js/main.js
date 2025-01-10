@@ -10,7 +10,7 @@ var slider = tns({
   items: 1,
   slideBy: 'page',
   autoplay: true,
-  nav: false,      // Hide navigation
+  nav: true, // Hide navigation
   controlsText: ['Prev', 'Next'],  // Custom controls text
   loop: true       // Enable loop
 });
