@@ -41,8 +41,8 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
-  line-height: 1;
+  font-weight: normal;
+  font-size: 35px;
 
   @include tablet {
     font-size: 30px;
