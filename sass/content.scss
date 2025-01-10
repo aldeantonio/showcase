@@ -47,7 +47,8 @@
         transform: scale(1.05);
 
         .s-item {
-            transition: transform 0.3s ease; // Adiciona uma transição suave ao aumento de tamanho
+            transition: transform 0.3s ease; 
+            // Adiciona uma transição suave ao aumento de tamanho
         }
         &::after {
             content: "";
@@ -58,6 +59,7 @@
             height: 100%;
             top: 0;
             z-index: 1;
+
         }
 
     }
