@@ -148,6 +148,7 @@
 
 
     .item-content-1 {
+        position: relative;
         border-left: solid 1px white;
         padding: 0 0 40px 20px;
         grid-column-start: 4;
@@ -161,8 +162,21 @@
             grid-column-end: 4;
         }
     }
+    ::before {
+        position: absolute;
+        content: '';
+        display: grid;
+        background-color: white;
+        width:20px;
+        height: 20px;
+        border-radius: 50%;
+        bottom: -4%;
+        left: -4%;
+
+    }
 
     .item-content-2 {
+        position: relative;
         border-left: solid 1px white;
         padding: 0 0 40px 20px;
         grid-column-start: 7;
@@ -176,6 +190,18 @@
             grid-column-start: 1;
             grid-column-end: 4;
         }
+    }
+    ::before {
+        position: absolute;
+        content: '';
+        display: grid;
+        background-color: white;
+        width:20px;
+        height: 20px;
+        border-radius: 50%;
+        bottom: -4%;
+        left: -4%;
+
     }
 }
 
