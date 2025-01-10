@@ -23,6 +23,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
+    @include tablet {
+        grid-template-columns: 1fr 1fr;
+    }
     @include mobile {
         grid-template-columns: 1fr;
         
@@ -35,8 +38,11 @@
     height: 600px;
     color: $color-white;
     transition: transform 0.3s ease; // Adiciona uma transição suave ao aumento de tamanho
+    @include tablet {
+        height: 400px;
+    }
     @include mobile {
-        height: 500px;
+        height: 450px;
     }
     &:hover {
         transform: scale(1.05);
