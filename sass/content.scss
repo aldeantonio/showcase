@@ -11,11 +11,12 @@
 }
 
 .index-container {
-    max-width: 600px;
+    max-width: 500px;
     margin: 0 auto;
+    width: 100%;
 
     @include desktop-small {
-      max-width: 600px;
+      max-width: 500px;
     }
   
     @include tablet {
@@ -27,6 +28,7 @@
       padding: 0 20px;
     }
 }
+
   
 
 .i-header {
@@ -59,6 +61,8 @@
     justify-content: center;
     gap: 20px; 
     border-radius: 25px;   
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
     .item-icon {
         position:absolute;
         left: 0;
@@ -73,6 +77,10 @@
 
     p {
         color: white;
+    }
+    &:hover {
+        background-color: red;
+        transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
     }
 }
 
