@@ -405,11 +405,17 @@
 //Architect
 
 .portfolio {
+    padding: 0 10px;
+
 }
 
 .p-content {
     display: flex;
+    gap: 10px;
     height: 450px;
+    @include mobile {
+        flex-direction: column;
+    }
 }
 
 .p-timeline {
@@ -417,12 +423,23 @@
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     width: 45%;
+    @include mobile {
+        width: 100%;
+    }
     .item {
         background-color: red;
         padding: 20px;
+        border-radius: 25px;
     }
 }
 
 .p-destaque {
     width: 65%;
+    @include mobile {
+        width: 100%;
+        height: 350px;
+    }
+    img {
+        border-radius: 25px;
+    }
 }
