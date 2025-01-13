@@ -400,3 +400,29 @@
     display: none;
 
   }
+
+
+//Architect
+
+.portfolio {
+}
+
+.p-content {
+    display: flex;
+    height: 450px;
+}
+
+.p-timeline {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 45%;
+    .item {
+        background-color: red;
+        padding: 20px;
+    }
+}
+
+.p-destaque {
+    width: 65%;
+}
