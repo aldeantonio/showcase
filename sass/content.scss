@@ -478,3 +478,22 @@
     width: 100%;
     margin: 0 10px;
 }
+
+
+//Services Page
+
+.serices-page {
+
+    .s-content {
+        display: flex;
+
+        p {
+            margin: 25px 0;
+        }
+
+        .text, .image {
+            width: 100%;
+        }
+    }
+
+}
