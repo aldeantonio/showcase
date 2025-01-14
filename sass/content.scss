@@ -499,7 +499,7 @@
 }
 
 .arc-about {
-
+margin: 50px 0;
 }
 
 .content {
@@ -515,6 +515,9 @@
 
     .info {
         width: 100%;
+        h3 {
+            font-size: 35px;
+        }
 
         .text {
             display: flex;
