@@ -597,13 +597,18 @@
 }
 
 
-//Slide 
+//Slide
+.slide {
+    margin: 50px 0;
+}
 
 .sl-content {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(3, 1fr);
+    // display: grid;
+    // gap: 20px;
+    // grid-template-columns: repeat(3, 1fr);
 }
+
+
 
 .sl-item {
     background-color: red;
@@ -617,3 +622,23 @@
       background-color: green;
     }
 }
+
+.my-slider {
+    display: flex;
+    overflow: hidden;
+}
+
+.custom-nav button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.custom-nav button:hover {
+    background-color: #555;
+}
+
+
