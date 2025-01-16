@@ -533,11 +533,11 @@
 }
 
 .start {
-    background-color: red;
+    padding: 50px 0;
+    background-color: aquamarine;
 }
 
 .s-content {
-    background-color: blue;
     display: flex;
     gap: 50px;
     @include mobile {
@@ -563,6 +563,8 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     width: 100%;
+    padding: 30px;
+
     @include mobile {
         gap: 25px;
     }
@@ -571,8 +573,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 150px;
-        height: 150px;
+        // width: 150px;
+        // height: 150px;
+        width: 100%;
+        height: 100%;
         border-radius: 50%;
         background-color: White;
         @include tablet {
@@ -590,4 +594,18 @@
             padding: 20px;
         }
     }
+}
+
+
+//Slide 
+
+.sl-content {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.sl-item {
+    background-color: red;
+    height: 350px;
 }
