@@ -2,7 +2,7 @@ const slider = tns({
   container: '.my-slider',
   items: 1,
   slideBy: 'page',
-  autoplay: true,
+  autoplay: false,
   autoplayTimeout: 3000,
   controls: false, // Hide default controls
   nav: false, // Hide default navigation

@@ -608,6 +608,16 @@
     // grid-template-columns: repeat(3, 1fr);
 }
 
+.sl-header {
+    h3 {
+        font-size: 50px;
+    }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
 
 
 .sl-item {
@@ -626,6 +636,7 @@
 .my-slider {
     display: flex;
     overflow: hidden;
+    gap: 20px;
 }
 
 .custom-nav button {
