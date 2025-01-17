@@ -1,0 +1,31 @@
+
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 10;
+    padding: 25px;
+
+    .logo {
+        a {
+            font-size: 25px;
+        }
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        span {
+            display: flex;
+            background-color: white;
+            height: 2px;
+            width: 50px;
+            @include mobile {
+                background-color: black;
+            }
+        }
+    }
+}
