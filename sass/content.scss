@@ -407,6 +407,9 @@
 .first {
     height: 100dvh;
     display: flex;
+    @include mobile {
+        flex-direction: column;
+    }
 
     .f-block {
         width: 100%;
@@ -416,11 +419,17 @@
             margin-top: 20%;
             font-size: 120px;
             font-weight: normal;
+            @include mobile {
+                font-size: 50px;
+            }
         }
         p {
             width: 50%;
             font-size: 25px;
             margin-top: 20%;
+            @include mobile {
+                width: 100%;
+            }
         }
 
         .link {
