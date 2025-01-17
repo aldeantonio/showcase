@@ -485,10 +485,24 @@
         width: 100%;
     }
     .item-image {
-        height: 450px;
-        @include 
+        height: 650px;
+        @include mobile {
+            height: 450px;
+        }
 
         
+    }
+
+    h3 {
+        font-size: 30px;
+        font-weight: normal;
+        margin: 20px 0;
+        @include mobile {
+            font-size: 25px;
+        }
+    }
+    p {
+        line-height: 1.5;
     }
 }
 
