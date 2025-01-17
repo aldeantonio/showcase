@@ -433,7 +433,13 @@
         }
 
         .link {
+            display: flex;
+            align-items: center;
             margin-top: 15%;
+            img {
+                width: auto;
+                height: 20px;
+            }
         }
     }
     .f-image {
