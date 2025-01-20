@@ -29,3 +29,33 @@ header {
         }
     }
 }
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    gap: 50%px;
+}
+
+.title {
+    width: 30%;
+    h3 {
+        font-size: 50px;
+        font-weight: normal;
+    }      
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    width: 705;
+
+    .link {
+        display: flex;
+        flex-direction: column;
+
+        ul {
+            font-size: 25px;
+        }
+    }
+}
