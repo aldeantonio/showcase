@@ -917,6 +917,40 @@
 
         a {
             color: gold;
+            img {
+                width: 20px;
+                height: auto;
+            }
+        }
+    }
+  }
+
+  .cta {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ct-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+        font-size: 70px;
+        margin-bottom: 20px;
+        @include mobile {
+            font-size: 30px;
+        }
+      }
+
+    a {
+        img {
+            width: 20px;
+            height: auto;
         }
     }
   }
