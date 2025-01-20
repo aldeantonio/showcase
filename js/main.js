@@ -1,6 +1,22 @@
 
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-80px";
+  }
+  prevScrollpos = currentScrollPos;
+}
 
+const image = document.querySelector('.rotating-image');
 
+// Alternar a rotação ao clicar na imagem
+image.addEventListener('click', () => {
+  image.style.animationPlayState = 
+    image.style.animationPlayState === 'paused' ? 'running' : 'paused';
+});
 
 const slider = tns({
   container: '.my-slider',
