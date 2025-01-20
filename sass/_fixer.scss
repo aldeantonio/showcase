@@ -35,10 +35,14 @@ footer {
     color: white;
     display: flex;
     justify-content: space-between;
-    gap: 50%px;
+    gap: 50px;
     padding: 50px 0 600px 20px;
     position: relative;
     overflow: hidden;
+    @include mobile {
+        flex-direction: column;
+        padding: 20px 20px 400px;
+    }
 
     .aside {
         position: absolute;
@@ -54,9 +58,13 @@ footer {
 
 .f-title {
     width: 30%;
+    @include mobile {
+        width: 100%;
+    }
     h3 {
         font-size: 50px;
         font-weight: normal;
+        line-height: 1;
     }      
 }
 
@@ -66,6 +74,10 @@ footer {
     width: 705;
     position: relative;
     z-index: 10;
+    @include mobile {
+        flex-direction: column;
+        gap: 50px;
+    }
 
     .f-link {
         display: flex;
@@ -95,6 +107,9 @@ footer {
     left: 0;
     bottom: 0;
     padding: 20px;
+    @include mobile {
+        bottom: 17%;
+    }
 
     
     
