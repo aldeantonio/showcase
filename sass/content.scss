@@ -486,12 +486,21 @@
     }
     .item-image {
         height: 650px;
+        overflow: hidden;
         @include mobile {
             height: 450px;
         }
-
         
+        img {
+            transition: transform .4s; 
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
     }
+
+
 
     h3 {
         font-size: 30px;
