@@ -899,3 +899,24 @@
 
     }
   }
+
+  .highligth {
+    height: 100dvh;
+    position: relative;
+    .hg-content {
+        position: absolute;
+        top: 0;
+        z-index: 10;
+        color: white;
+        padding: 100px 0 0 20px;
+        h2 {
+            width: 60%;
+            font-size: 45px;
+            margin-bottom: 50px;
+        }
+
+        a {
+            color: gold;
+        }
+    }
+  }
