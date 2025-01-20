@@ -22,3 +22,26 @@ const slider = tns({
 // Custom navigation buttons
 document.querySelector('.prev').addEventListener('click', () => slider.goTo('prev'));
 document.querySelector('.next').addEventListener('click', () => slider.goTo('next'));
+
+
+const slides = document.querySelectorAll('.slide');
+const progressBars = document.querySelectorAll('.progress-bar');
+let currentIndex = 0;
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+  });
+
+  progressBars.forEach((bar, i) => {
+    bar.querySelector('::after').style.width = i === index ? '100%' : '0%';
+  });
+}
+
+function nextSlide() {
+  progressBars[currentIndex].classList.remove('active');
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
+}
+
+setInterval(nextSlide, 3000);
