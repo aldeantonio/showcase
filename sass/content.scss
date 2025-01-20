@@ -450,7 +450,8 @@
 
 
 .second {
-    padding: 25px;
+    padding: 20px;
+    margin-bottom: 200px;
 }
 
 .sc-header {
@@ -503,9 +504,9 @@
 
 
     h3 {
-        font-size: 30px;
+        font-size: 25px;
         font-weight: normal;
-        margin: 20px 0;
+        margin: 30px 0 25px 0;
         @include mobile {
             font-size: 25px;
         }
