@@ -887,4 +887,15 @@
     p {
         font-size: 45px;
     }
+    @include mobile {
+        padding-left: 0;
+        h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 25px;
+        }
+
+    }
   }
