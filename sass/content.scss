@@ -872,3 +872,19 @@
     transition: width 3s linear;
   }
   
+
+  .wedo {
+    margin: 50px 0 100px 0;
+    padding: 0 20px;
+  }
+
+  .w-content {
+    padding-left: 60%;
+    h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 45px;
+    }
+  }
