@@ -88,3 +88,31 @@ footer {
         }
     }
 }
+
+
+.f-copy {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+
+    
+    
+    .f-logos {
+        p {
+            font-size: 15px;
+            margin-bottom: 10px;
+
+        }
+
+        img {
+            width: 100px;
+            margin-right: 20px;
+        }
+    }
+
+    p {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+}
