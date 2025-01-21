@@ -449,13 +449,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
-
+        overflow: hidden;
+        padding: 25px;
+        
         .cover-image {
-            height: 550px;
-            width: 550px;
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
             @include mobile {
-                height: 150px;
-                width: 150px;
+                height: 100%;
+                width: 100%;
             }
         }
         
