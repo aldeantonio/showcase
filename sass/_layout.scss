@@ -17,6 +17,25 @@
   }
 }
 
+// Container principal
+.container-blog {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 25px;
+  @include desktop-small {
+    max-width: 960px;
+  }
+
+  @include tablet {
+    max-width: 720px;
+  }
+
+  @include mobile {
+    max-width: 540px;
+    padding: 0 20px;
+  }
+}
+
 .container-news {
   max-width: 750px;
   margin: 0 auto;
