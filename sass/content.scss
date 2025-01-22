@@ -265,7 +265,7 @@
     .article-grid {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        gap: 50px;
+        gap: 25px;
 
         .content-main {
             // background-color: red;
@@ -295,7 +295,7 @@
                 justify-content: center;
                 align-items: center;
                 .h-image {
-                    height: 150px;
+                    height: 100px;
                     overflow: hidden;
                     border-radius: 20px;
 
@@ -304,6 +304,13 @@
                         &:hover {
                             transform: scale(1.2);
                         }
+                    }
+                }
+
+                .h-texts {
+                    h3 {
+                        font-size: 17px;
+                        line-height: 1;
                     }
                 }
             }
@@ -1040,6 +1047,7 @@
 }
 
 .item {
+    position: relative;
     width: 500px;
     @include mobile {
         width: 100%;
@@ -1058,6 +1066,16 @@
                 transform: scale(1.1);
             }
         }
+
+        .sc-item-content{
+            position: absolute;
+            z-index: 10;
+            bottom: 0;
+            padding: 20px;
+            h3 {
+                padding: 0;
+            }
+        }
     }
 
 
@@ -1074,6 +1092,226 @@
         line-height: 1.5;
     }
 }
+
+
+//Slides
+
+.our-slides {
+    padding: 20px;
+    margin-bottom: 200px;
+
+    .slide-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 25px;
+        .slide-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+    
+    .slide-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        @include mobile {
+            grid-template-columns: repeat(1, 1fr);
+    
+        }
+        
+        .slide-item {
+            position: relative;
+            width: 100%;
+            @include mobile {
+                width: 100%;
+            }
+            .slide-item-image {
+                height: 650px;
+                overflow: hidden;
+                @include mobile {
+                    height: 450px;
+                }
+        
+                .slide-item-content{
+                    position: absolute;
+                    z-index: 10;
+                    bottom: -20%;
+                    padding: 20px;
+                    transition: .60s; 
+
+                    h3 {
+                        font-size: 25px;
+                        font-weight: normal;
+                        @include mobile {
+                            font-size: 25px;
+                        }
+                    }
+                    p {
+                        line-height: 1.5;
+                    }
+                }
+                &:hover {
+                    .slide-item-content {
+                        bottom: 0;
+                    }
+                }
+                
+                img {
+                    transition: transform .4s; 
+        
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+
+    
+        
+            }
+        
+        }
+    }
+
+
+}
+
+
+//PRO filter
+.projects {
+    padding: 20px;
+    
+    #filterButtons {
+      margin-bottom: 20px;
+  
+      .btn {
+        border: none;
+        outline: none;
+        padding: 10px 20px;
+        margin: 5px;
+        background-color: #f1f1f1;
+        cursor: pointer;
+        font-weight: bold;
+  
+        &:hover {
+          background-color: #ddd;
+        }
+  
+        &.active {
+          background-color: #333;
+          color: #fff;
+        }
+      }
+    }
+  
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+
+
+
+
+        .filterDiv {
+        display: none; // Hidden by default
+        position: relative;
+        width: 100%;
+        @include mobile {
+            width: 100%;
+        }
+        &.show {
+            display: block;
+          }
+        .slide-item-image {
+            height: 650px;
+            overflow: hidden;
+            @include mobile {
+                height: 450px;
+            }
+    
+            .slide-item-content{
+                position: absolute;
+                z-index: 10;
+                bottom: -20%;
+                padding: 20px;
+                transition: .60s; 
+
+                h3 {
+                    font-size: 25px;
+                    font-weight: normal;
+                    @include mobile {
+                        font-size: 25px;
+                    }
+                }
+                p {
+                    line-height: 1.5;
+                }
+            }
+            &:hover {
+                .slide-item-content {
+                    bottom: 0;
+                }
+            }
+            
+            img {
+                transition: transform .4s; 
+    
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+
+    
+        }
+    
+        }
+
+
+
+
+  
+    //   .filterDiv {
+    //     display: none; // Hidden by default
+    //     width: 200px;
+    //     text-align: center;
+    //     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    //     border-radius: 10px;
+    //     overflow: hidden;
+  
+    //     &.show {
+    //       display: block;
+    //     }
+  
+    //     a {
+    //       text-decoration: none;
+    //       color: inherit;
+  
+    //       img {
+    //         width: 100%;
+    //         height: auto;
+    //         transition: transform 0.3s ease;
+  
+    //         &:hover {
+    //           transform: scale(1.1);
+    //         }
+    //       }
+  
+    //       p {
+    //         margin: 10px 0;
+    //         font-size: 16px;
+    //         font-weight: bold;
+    //       }
+    //     }
+    //   }
+    }
+  }
+  
+
+
 
 
 .p-content {
