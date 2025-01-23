@@ -253,6 +253,57 @@
     }   
 }
 
+//PAGE SERV
+
+.pro-serv {
+
+    .serv-item {
+        display: flex;
+        // background: red;
+        padding: 20px 40px;
+        margin: 0 40px;
+        border-bottom: solid black 1px;
+        @include mobile {
+            flex-direction: column;
+            margin: 0 20px;
+            padding: 20px 0;
+        }
+        span {
+            font-size: 35px;
+            width: 20%;
+        }
+        h3 {
+            font-size: 50px;
+            width: 80%;
+            font-weight: normal;
+            @include mobile {
+                font-size: 35px;
+                margin: 10px 0 20px 0;
+            }
+
+        }
+        p {
+            font-size: 20px;
+            line-height: 1.2;
+            width: 100%;
+        }
+        transition: background-color 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+            background-color: red;
+            transform: scale(1.01);
+            border-bottom: none;
+            color: white;
+            span {
+                padding-left: 20px;
+            }
+        }
+    }
+}
+
+
+
+
 //BLOG
 
 .blog-focus {
