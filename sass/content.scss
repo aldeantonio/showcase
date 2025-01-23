@@ -271,13 +271,16 @@
         span {
             font-size: 35px;
             width: 20%;
+            @include mobile {
+                font-size: 20px;
+            }
         }
         h3 {
             font-size: 50px;
             width: 80%;
             font-weight: normal;
             @include mobile {
-                font-size: 35px;
+                font-size: 30px;
                 margin: 10px 0 20px 0;
             }
 
