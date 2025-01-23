@@ -175,6 +175,11 @@
 
 //PAGE PRO
 
+.pro-cover {
+    height: 450px;
+    margin-bottom: 50px;
+}
+
 .pro-title {
     padding: 0 40px;
     display: flex;
@@ -190,8 +195,12 @@
 }
 
 .pro-details {
-    width: 50%;
-    padding: 0 40px;
+    width: 80%;
+    padding: 0 200px;
+    @include mobile {
+        width: 100%;
+        padding: 0 20px;
+    }
 
     .pro-description {
 
@@ -208,17 +217,39 @@
 
     .details-item {
         width: 50%;
+        margin-bottom: 50px;
+        @include mobile {
+            width: 100%;
+        }
         .de-item {
             display: flex;
             justify-content: space-between;
             border-bottom: solid black 1px;
             padding-bottom: 10px;
+            p {
+                font-size: 20px;
+            }
         }
+
+        
     }
 
 }
 
-.images-grid
+.images-grid {
+    padding: 0 200px;
+    @include mobile {
+        padding: 0 20px;
+    }
+    .image-item {
+        height: 550px;
+        margin-bottom: 50px;
+        @include mobile {
+            height: 300px;
+            margin-bottom: 20px;
+        }
+    }
+}
 
 //BLOG
 
