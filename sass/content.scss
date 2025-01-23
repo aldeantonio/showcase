@@ -241,12 +241,16 @@
 
     .image-item {
         height: 550px;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         @include mobile {
             height: 300px;
             margin-bottom: 20px;
         }
-    }
+         img {
+            border-radius: 25px;
+
+         }
+    }   
 }
 
 //BLOG
