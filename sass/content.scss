@@ -172,6 +172,54 @@
     grid-column-end: span 12;
 }
 
+
+//PAGE PRO
+
+.pro-title {
+    padding: 0 40px;
+    display: flex;
+    h1 {
+        width: 100%;
+        font-size: 50px;
+    }
+    
+    p {
+        font-size: 30px;
+        width: 100%;
+    }
+}
+
+.pro-details {
+    width: 50%;
+    padding: 0 40px;
+
+    .pro-description {
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+    }
+
+    .details-item {
+        width: 50%;
+        .de-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: solid black 1px;
+            padding-bottom: 10px;
+        }
+    }
+
+}
+
+.images-grid
+
 //BLOG
 
 .blog-focus {
