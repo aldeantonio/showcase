@@ -283,6 +283,11 @@
                 font-size: 30px;
                 margin: 10px 0 20px 0;
             }
+            &::after {
+                content: "/";
+                margin-left: 20px;
+                color: red;
+            }
 
         }
         p {
@@ -303,6 +308,68 @@
             span {
                 padding-left: 20px;
             }
+        }
+
+    }
+}
+
+
+//SERVICES PAGE
+
+.services-page {
+    h1 {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+
+    .serv-page-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 80px;
+        @include mobile {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        .serv-description {
+            p {
+                font-size: 20px;
+                line-height: 1.5;
+            }
+        }
+
+        .serv-itens {
+            ul {
+                padding-left: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                font-size: 20px;
+                list-style:disc;
+            }
+        }
+    }
+
+
+    .our-case {
+        margin: 50px 0;
+        h2 {
+            font-size: 35px;
+            margin-bottom: 25px;
+        }
+    }
+
+    .serv-cases {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        @include mobile {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .image-case {
+            height: 450px;
+
         }
     }
 }
